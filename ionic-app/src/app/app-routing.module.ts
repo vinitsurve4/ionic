@@ -11,13 +11,18 @@ const routes: Routes = [
     loadChildren: () => import('./pages/menu/menu.module').then( m => m.MenuPageModule)
   },
   {
-    path: 'first',
-    loadChildren: () => import('./pages/first/first.module').then( m => m.FirstPageModule)
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
-    path: 'second',
-    loadChildren: () => import('./pages/second/second.module').then( m => m.SecondPageModule)
+    path: 'registration',
+    loadChildren: () => import('./pages/registration/registration.module').then( m => m.RegistrationPageModule)
+  },  {
+    path: 'otp',
+    loadChildren: () => import('./pages/otp/otp.module').then( m => m.OtpPageModule)
   }
+
+
 ];
 @NgModule({
   imports: [
