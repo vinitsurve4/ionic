@@ -14,9 +14,20 @@ const routes: Routes = [
         children:[
           {
             path: '',
-            loadChildren: () => import('src/app/nearest/nearest.module').then( m => m.NearestPageModule)
+            loadChildren: () => import('src/app/tabs/tabpages/nearest/nearest.module').then( m => m.NearestPageModule)
           },
-        ]
+        ] 
+
+      },
+      {
+
+        path: 'profile',
+        children:[
+          {
+            path: '',
+            loadChildren: () => import('src/app/tabs/tabpages/profile/profile.module').then( m => m.ProfilePageModule)
+          },
+        ] 
 
       }
     ]

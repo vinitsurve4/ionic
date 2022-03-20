@@ -45,6 +45,11 @@ const routes: Routes = [
     path: 'termsandconditions',
     loadChildren: () => import('./termsandconditions/termsandconditions.module').then( m => m.TermsandconditionsPageModule)
   }
+  // {
+  //   path: 'profile',
+  //   loadChildren: () => import('./tabs/tabpages/profile/profile.module').then( m => m.ProfilePageModule)
+  // }
+
 
 
 
