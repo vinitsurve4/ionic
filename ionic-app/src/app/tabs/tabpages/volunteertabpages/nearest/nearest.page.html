@@ -1,9 +1,29 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>nearest</ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content>
-
-</ion-content>
+<ion-content color="medium">
+  <ion-card>
+    <ion-list>
+      <ion-item>
+  
+          <ion-text color="secondary"></ion-text>
+          <ion-label>
+          <p>● The donor must be fit and healthy, and should not be suffering from transmittable diseases.</p>
+          <p>● The age of the donor must be above 18 years and below 65 years of age.</p>
+          <p>● The pulse rate between 50 and 100 without irregularities.</p>
+          <p>● The Hemoglobin level minimum of 12.5 g/dL.</p>
+          <p>● Blood pressure- Diastolic:50-100 mm Hg, Systolic:100-180 mm Hg.</p>
+          <p>● The time period between successive blood donations should be more than 3 months.</p>
+        </ion-label>
+        </ion-item>
+        </ion-list>
+    
+        <ion-grid style="max-width : 75%; text-align: center">
+        <ion-row>
+          <ion-col class="ion-text-center">
+            <ion-button [routerLink]="['/home']" color="danger" expand="block" class="ion-text-wrap"style="max-width: 75%;">Accept</ion-button>
+          </ion-col>
+          <ion-col class="ion-text-center">
+            <ion-button [routerLink]="['/login']" color="danger" expand="block" class="ion-text-wrap" style="max-width: 75%;">Decline</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+      </ion-card>
+  </ion-content>

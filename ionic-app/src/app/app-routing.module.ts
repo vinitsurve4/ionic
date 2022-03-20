@@ -40,10 +40,8 @@ const routes: Routes = [
     path: 'distresstabs',
     loadChildren: () => import('./tabs/distresstabs/distresstabs.module').then( m => m.DistresstabsPageModule)
   },
+ 
   {
-    path: 'nearest',
-    loadChildren: () => import('./tabs/tabpages/volunteertabpages/nearest/nearest.module').then( m => m.NearestPageModule)
-  },  {
     path: 'termsandconditions',
     loadChildren: () => import('./termsandconditions/termsandconditions.module').then( m => m.TermsandconditionsPageModule)
   }

@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './distresstabs.page.html',
   styleUrls: ['./distresstabs.page.scss'],
 })
+
 export class DistresstabsPage implements OnInit {
 
   constructor(
